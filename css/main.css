@@ -64,6 +64,11 @@ ul {
 	list-style-position: inside;
 }
 
+ul ul {
+	list-style-position: inside;
+	margin-left: 25px;
+}
+
 footer {
 	margin-top: 10px;
 	padding: 5px 0px;
@@ -105,7 +110,7 @@ h1.title1 {
 	text-align: left;
 }
 
-li {
+ul>ul>li {
 	color: var(--col_contrast1);
 }
 
@@ -115,8 +120,8 @@ li p {
 
 .button {
 	display: inline-block;
-	color: var(--col_white);
-	background-color: var(--col_contrast1);
+	color: var(--col_black);
+	/* background-color: var(--col_contrast1); */
 	width: 140px;
 	padding: 10px 0px;
 	border-radius: 5px;
@@ -129,6 +134,7 @@ li p {
 
 .button:hover {
 	background-color: var(--col_black);
+	color: var(--col_white);
 }
 
 .conteiner {
