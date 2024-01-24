@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+#profile_pic {
+    margin: 25px auto 25px auto;
+}
+
+body {
+    background-color: black;
+}
+
+main {
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+main p {
+    text-align: center;
+}
+
+main ul {
+    columns: 2;
+}
+
+main h1 {
+    margin-top: 50px;
+    text-align: left;
+}
+
+#back {
+    text-decoration: none;
+    transition-duration: 1s;
+}
+
+#back:hover {
+    text-decoration: underline;
+}

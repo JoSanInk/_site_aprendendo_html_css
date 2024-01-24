@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens de fundo</title>
+    <style>
+        body {
+            background-image: url('../img/wallp/pattern002.png');
+            background-size: 150px;
+            background-repeat: repeat-y;
+        }
+
+        .quadrado {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            border-color: black;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        #q1 {
+            background-color: aqua;
+
+        }
+
+        #q2 {
+            background-image: linear-gradient(to top, blue, yellow);
+        }
+
+        #q3 {
+            background-image: url('../img/wallp/wallpaper002.jpg');
+        }
+
+        .bloco {
+            height: 150px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            background-image: url('../img/wallp/wallpaper003.jpg');
+
+        }
+
+        #quad1 {
+            background-position: left top;
+        }
+
+        #quad2 {
+            background-position: left center;
+        }
+
+        #quad3 {
+            background-position: right bottom;
+        }
+
+        #quad4 {
+            background-position: left bottom;
+        }
+
+        #quad5 {
+            background-position: right center;
+        }
+
+        #quad6 {
+            background-position: right top;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="quadrado" id="q1"></div>
+        <div class="quadrado" id="q2"></div>
+        <div class="quadrado" id="q3"></div>
+
+        <div class="bloco" id="quad1"></div>
+        <div class="bloco" id="quad2"></div>
+        <div class="bloco" id="quad3"></div>
+        <div class="bloco" id="quad4"></div>
+        <div class="bloco" id="quad5"></div>
+        <div class="bloco" id="quad6"></div>
+    </main>
+</body>
+
+</html>

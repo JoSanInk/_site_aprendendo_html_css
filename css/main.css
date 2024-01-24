@@ -121,7 +121,7 @@ li p {
 .button {
 	display: inline-block;
 	color: var(--col_black);
-	/* background-color: var(--col_contrast1); */
+	background-color: var(--col_2);
 	width: 140px;
 	padding: 10px 0px;
 	border-radius: 5px;
@@ -129,7 +129,6 @@ li p {
 	user-select: none;
 	cursor: pointer;
 	transition: 0.5s;
-	margin: auto;
 }
 
 .button:hover {
@@ -139,4 +138,19 @@ li p {
 
 .conteiner {
 	display: inline;
+}
+
+.center_image {
+	display: block;
+	margin: 0px auto;
+	border-radius: 50px;
+}
+
+#header_separator {
+	height: 10px;
+	background-color: var(--col_black);
+}
+
+#titulo {
+	text-shadow: 3px 0px 0px var(--col_black);
 }
