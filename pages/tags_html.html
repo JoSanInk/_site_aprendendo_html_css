@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-widhth, initial-scale=1.0">
+	<link rel="shortcut icon" href="nerd.ico" type="image/x-icon">
+	<title>Tags em HTML</title>
+	<link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+	<main>
+		<h1>Tags em <a href="../index.html" target="_self">HTML</a></h1>
+		<p>em HTML5, podemos inserir os elementos da lista a seguir. passe o mouse sobre os termos para descobrir qual
+			tag devera utilizar em cada caso</p>
+
+		<p>nem todas as tags precisam ser fechadas, apenas as sequidas de <strong>'&lt;/&gt;'</strong> precisam ser
+			fechadas</p>
+
+		<!-- tags basicas -->
+		<h2>Tags de texto</h2>
+		<p>Atente-se: Apenas a tag "li" não precisa ser fechada.</p>
+
+		<ul>
+
+			<li>
+				<p>Titulos</p>
+				<ul>
+					<li>
+						<p>use - &lt;h1&gt; &lt;/h1&gt; - cria titulos de primeiro nivel, vai do h1 ate o h6.</p>
+				</ul>
+
+			<li>
+				<p>Paragrafo</p>
+				<ul>
+					<li>
+						<p>use - &lt;p&gt; &lt;/p&gt; - cria paragrafos.</p>
+				</ul>
+
+			<li>
+				<p>Abreviações</p>
+				<ul>
+					<li>
+						<p>use - &lt;abbr title=""&gt; &lt;/abbr&gt; - "title" recebe o valor completo do texto sendo
+							abreviado.</p>
+				</ul>
+
+			<li>
+				<p>Codigos-fonte</p>
+				<ul>
+					<li>
+						<p>use - &lt;code&gt; &lt;/code&gt; - isso faz o texto usar uma fonte mono-espaçada.</p>
+				</ul>
+
+			<li>
+				<p>Listas numeradas</p>
+				<ul>
+					<li>
+						<p>use - &lt;ol&gt; &lt;/ol&gt; - "Ordered List".</p>
+				</ul>
+
+			<li>
+				<p>Listas demarcadas</p>
+				<ul>
+					<li>
+						<p>use - &lt;ul&gt; &lt;/ul&gt; - "Unordered List".</p>
+				</ul>
+
+			<li>
+				<p>Item da lista</p>
+				<ul>
+					<li>
+						<p>use - &lt;li&gt; &lt;/li&gt; - "List Item" (não precisa ser fechada).</p>
+				</ul>
+
+			<li>
+				<p>Negrito</p>
+				<ul>
+					<li>
+						<p>use - &lt;strong&gt; &lt;/strong&gt; cria um <strong>texto forte</strong>.</p>
+				</ul>
+
+			<li>
+				<p>Italico</p>
+				<ul>
+					<li>
+						<p>use - &lt;em&gt; &lt;/em&gt; - cria um <em>texto com enfase</em>.</p>
+				</ul>
+
+			<li>
+				<p>Link</p>
+				<ul>
+					<li>
+						<p>use - &lt;a href="" target&gt; &lt;/a&gt; - "href" recebe o caminho a ser linkado, pode ser
+							um url ou outra pagina do seu site(outro arquivo html).<br> Target recebe o valor que diz se
+							o link abrira em outra aba do navegador ou na propria aba, sendo os valores respectivamente:
+							"_self" para abrir na propria pagina, e "_blank" para abrir em uma nova aba.</p>
+				</ul>
+
+		</ul>
+		<!-- imagens -->
+		<h2>Tags de midias</h2>
+		<p>Atente-se: apenas as tags "video" e "audio" precisam ser fechadas.</p>
+
+		<ul>
+			<li>
+				<p>img</p>
+				<ul>
+					<li>
+						<p>use - &lt;img src="" alt=""&gt; - src recebe o caminho da imagem, alt recebe um texto
+							descritivo para o caso da imagem nao ser mostrada.</p>
+				</ul>
+
+			<li>
+				<p>Imagens dinamicas com picture e source</p>
+				<ul>
+					<li>
+						<p>use:</p><code><pre>
+&lt;picture&gt; 
+	&lt;source media="(max-width: 750px)" \
+	srcset="img/img_p.png" type="image/png"&gt
+	&lt;img src="" alt&gt;
+&lt;/picture&gt;.</pre></code>
+						<p> - usa uma tag "img" juntamente com a tag "source" para usar varias fontes de imagem
+							dependendo por exemplo, da largura maxima da janela(entre outras situações), as fontes(tags
+							"source") devem estar na ordem certa, sendo esta, de cima para baixo - menor para maoir ou
+							vice versa. a imagem fonte da tag "img" dentro de "picture" sempre deve ser a maior ou a
+							menor de todas as imagens. lembre tambem de usar "srcset" ao inves de "src" nas tags
+							"source" quando for trabalhar com imagens.</p>
+				</ul>
+
+			<li>
+				<p>audio</p>
+				<ul>
+					<li>
+						<p>use - &lt;audio src="" controls&gt;&lt;/audio&gt; - src recebe o caminho da imagem, alt
+							recebe um texto descritivo para o caso da imagem nao ser mostrada. recomenda-se o uso
+							acompanhado da tag "source".</p>
+				</ul>
+
+			<li>
+				<p>video</p>
+				<ul>
+					<li>
+						<p>use - &lt;video controls&gt;&lt;/video controls&gt; - . recomenda-se o uso acompanhado da tag
+							"source".</p>
+				</ul>
+
+
+		</ul>
+		<!-- conteiners -->
+		<h2>Tags conteiners</h2>
+		<p>Atente-se: todas a tags conteiners <em>precisam</em> ser fechadas.</p>
+
+		<ul>
+			<li>
+				<p>header</p>
+				<ul>
+					<li>
+						<p>Usado apra fazer cabeçalhos.</p>
+				</ul>
+
+			<li>
+				<p>nav</p>
+				<ul>
+					<li>
+						<p>Feito para criar barras de navegação.</p>
+				</ul>
+
+			<li>
+				<p>main</p>
+				<ul>
+					<li>
+						<p>Leva todo o conteudo principal do site. Rescomenda-se o uso header > main > footer.</p>
+						</p>
+						</p>
+				</ul>
+
+			<li>
+				<p>section</p>
+				<ul>
+					<li>
+						<p>Usado para separar seções no site.</p>
+				</ul>
+
+			<li>
+				<p>article</p>
+				<ul>
+					<li>
+						<p>Cria artigos.</p>
+				</ul>
+
+			<li>
+				<p>aside</p>
+				<ul>
+					<li>
+						<p>#.</p>
+				</ul>
+
+			<li>
+				<p>footer.</p>
+				<ul>
+					<li>
+						<p>Usado para criar o rodapé do site.</p>
+				</ul>
+
+			<li>
+				<p>div</p>
+				<ul>
+					<li>
+						<p>Tag conteiner genérica do tipo box-level.</p>
+				</ul>
+
+			<li>
+				<p>span</p>
+				<ul>
+					<li>
+						<p>Tag agrupadora genérica do tipo inline-level.</p>
+				</ul>
+		</ul>
+
+		<p><br>mais Tags serão adicionadas em breve</p>
+	</main>
+	<footer>
+		<p>Feito por: JoSanInk</p>
+	</footer>
+
+
+</body>
+
+</html>

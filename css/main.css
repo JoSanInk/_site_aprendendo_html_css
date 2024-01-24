@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+:root {
+	/* paleta */
+	--col_contrast1: #FF0050;
+	--col_contrast2: #FFFF00;
+	--col_1: #00FF6E;
+	--col_2: #00FFC7;
+	--col_3: #00E5FF;
+
+	--col_white: #fafafa;
+	--col_black: #0e0e0e;
+
+	/* fontes */
+	--basic_font: Arial, Helvetica, sans-serif;
+	--highlight_font: 'Courier New', Helvetica, sans-serif;
+
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: var(--col_white);
+	/* background-image: linear-gradient(to top, #100E5F, #1B179F); */
+	background-attachment: fixed;
+	font-family: var(--basic_font);
+	/* display: none; */
+	margin: 0px;
+
+}
+
+header {
+	padding: 10px;
+	background-color: var(--col_3);
+	box-shadow: 0px 5px 15px 5px #00000020;
+}
+
+header h1 {
+	margin-top: 10px;
+	font-size: 2.5em;
+}
+
+nav {
+	padding-top: 20px;
+}
+
+main {
+	background-color: var(--col_white);
+	max-width: 800px;
+	margin: 0px auto;
+	padding: 15px;
+	border-radius: 0px 0px 5px 5px;
+	box-shadow: 0px 5px 15px 5px #00000020;
+}
+
+main p {
+	line-height: 1.2em;
+}
+
+ul {
+	list-style-position: inside;
+}
+
+footer {
+	margin-top: 10px;
+	padding: 5px 0px;
+	background-color: var(--col_black);
+}
+
+footer>p {
+	color: var(--col_white);
+	text-align: center;
+	font-family: Courier;
+	margin: 0px;
+}
+
+h1 {
+	color: var(--col_contrast1);
+	text-align: center;
+	font-family: var(--highlight_font);
+	/* text-shadow: 5px 3px 2px #100E5F75; */
+}
+
+h2 {
+	color: var(--col_contrast1);
+	font-family: var(--highlight_font);
+}
+
+p {
+	text-align: justify;
+	/* text-decoration: underline; */
+	color: var(--col_black);
+}
+
+a {
+	text-align: center;
+	color: var(--col_contrast1);
+	text-decoration: none;
+}
+
+h1.title1 {
+	text-align: left;
+}
+
+li {
+	color: var(--col_contrast1);
+}
+
+li p {
+	color: #2C2C2C;
+}
+
+.button {
+	display: inline-block;
+	color: var(--col_white);
+	background-color: var(--col_contrast1);
+	width: 140px;
+	padding: 10px 0px;
+	border-radius: 5px;
+	text-align: center;
+	user-select: none;
+	cursor: pointer;
+	transition: 0.5s;
+	margin: auto;
+}
+
+.button:hover {
+	background-color: var(--col_black);
+}
+
+.conteiner {
+	display: inline;
+}
