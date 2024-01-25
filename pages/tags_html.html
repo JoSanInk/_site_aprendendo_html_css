@@ -10,6 +10,14 @@
 </head>
 
 <body>
+	<header>
+
+		<a href="../index.html">
+			<h1 id="titulo">HTML & CSS Simples</h1>
+		</a>
+	</header>
+	<div id="header_separator"></div>
+
 	<main>
 		<h1>Tags em <a href="../index.html" target="_self">HTML</a></h1>
 		<p>em HTML5, podemos inserir os elementos da lista a seguir. passe o mouse sobre os termos para descobrir qual
@@ -18,194 +26,148 @@
 		<p>nem todas as tags precisam ser fechadas, apenas as sequidas de <strong>'&lt;/&gt;'</strong> precisam ser
 			fechadas</p>
 
-		<!-- tags basicas -->
+		<!-- tags de texto -->
 		<h2>Tags de texto</h2>
-		<p>Atente-se: Apenas a tag "li" não precisa ser fechada.</p>
+		<details>
+			<summary>Titulos</summary>
+			<p>use - <strong>&lt;h1> &lt;/h1></strong> - cria titulos de primeiro nivel, vai do h1 ate o h6.</p>
+		</details>
 
-		<ul>
+		<details>
+			<summary>Paragrafo</summary>
+			<p>use - <strong>&lt;p> &lt;/p></strong> - cria paragrafos.</p>
+		</details>
 
-			<li>Titulos
-				<ul>
-					<li>
-						<p>use - &lt;h1&gt; &lt;/h1&gt; - cria titulos de primeiro nivel, vai do h1 ate o h6.</p>
-				</ul>
+		<details>
+			<summary>Abreviações</summary>
+			<p>use - <strong>&lt;abbr title=""> &lt;/abbr></strong> - "title" recebe o valor completo do texto sendo
+				abreviado.</p>
+		</details>
 
-			<li>Paragrafo
-				<ul>
-					<li>
-						<p>use - &lt;p&gt; &lt;/p&gt; - cria paragrafos.</p>
-				</ul>
+		<details>
+			<summary>Codigos-fonte</summary>
+			<p>use - <strong>&lt;code> &lt;/code></strong> - isso faz o texto usar uma fonte mono-espaçada.</p>
+		</details>
 
-			<li>Abreviações
-				<ul>
-					<li>
-						<p>use - &lt;abbr title=""&gt; &lt;/abbr&gt; - "title" recebe o valor completo do texto sendo
-							abreviado.</p>
-				</ul>
+		<details>
+			<summary>Listas numeradas</summary>
+			<p>use - <strong>&lt;ol> &lt;/ol></strong> - "Ordered List".</p>
+		</details>
 
-			<li>Codigos-fonte
-				<ul>
-					<li>
-						<p>use - &lt;code&gt; &lt;/code&gt; - isso faz o texto usar uma fonte mono-espaçada.</p>
-				</ul>
+		<details>
+			<summary>Listas demarcadas</summary>
+			<p>use - <strong>&lt;ul> &lt;/ul></strong> - "Unordered List".</p>
+		</details>
 
-			<li>Listas numeradas
-				<ul>
-					<li>
-						<p>use - &lt;ol&gt; &lt;/ol&gt; - "Ordered List".</p>
-				</ul>
+		<details>
+			<summary>Item da lista</summary>
+			<p>use - <strong>&lt;li> &lt;/li></strong> - "List Item" (não precisa ser fechada).</p>
+		</details>
 
-			<li>Listas demarcadas
-				<ul>
-					<li>
-						<p>use - &lt;ul&gt; &lt;/ul&gt; - "Unordered List".</p>
-				</ul>
+		<details>
+			<summary>Negrito</summary>
+			<p>use - <strong>&lt;strong> &lt;/strong></strong> cria um texto forte.</p>
+		</details>
 
-			<li>Item da lista
-				<ul>
-					<li>
-						<p>use - &lt;li&gt; &lt;/li&gt; - "List Item" (não precisa ser fechada).</p>
-				</ul>
+		<details>
+			<summary>Italico</summary>
+			<p>use - <strong>&lt;em> &lt;/em></strong> - cria um texto com enfase.</p>
+		</details>
 
-			<li>Negrito
-				<ul>
-					<li>
-						<p>use - &lt;strong&gt; &lt;/strong&gt; cria um <strong>texto forte</strong>.</p>
-				</ul>
+		<details>
+			<summary>Link (a)</summary>
+			<p>use - <strong>&lt;a href="" target> &lt;/a></strong> - "href" recebe o caminho a ser linkado, pode ser um
+				url ou outra
+				pagina do seu site(outro arquivo html).
+				Target recebe o valor que diz se o link abrira em outra aba do navegador ou na propria aba, sendo os
+				valores respectivamente: "_self" para abrir na propria pagina, e "_blank" para abrir em uma nova aba.
+			</p>
+		</details>
 
-			<li>Italico
-				<ul>
-					<li>
-						<p>use - &lt;em&gt; &lt;/em&gt; - cria um <em>texto com enfase</em>.</p>
-				</ul>
-
-			<li>Link
-				<ul>
-					<li>
-						<p>use - &lt;a href="" target&gt; &lt;/a&gt; - "href" recebe o caminho a ser linkado, pode ser
-							um url ou outra pagina do seu site(outro arquivo html).<br> Target recebe o valor que diz se
-							o link abrira em outra aba do navegador ou na propria aba, sendo os valores respectivamente:
-							"_self" para abrir na propria pagina, e "_blank" para abrir em uma nova aba.</p>
-				</ul>
-
-		</ul>
 		<!-- imagens -->
 		<h2>Tags de midias</h2>
 		<p>Atente-se: apenas as tags "video" e "audio" precisam ser fechadas.</p>
 
-		<ul>
-			<li>
-				<p>img</p>
-				<ul>
-					<li>
-						<p>use - &lt;img src="" alt=""&gt; - src recebe o caminho da imagem, alt recebe um texto
-							descritivo para o caso da imagem nao ser mostrada.</p>
-				</ul>
+		<details>
+			<summary>img</summary>
+			<p>use - <strong>&lt;img src="" alt=""></strong> - src recebe o caminho da imagem, alt recebe um texto
+				descritivo para o caso da
+				imagem nao ser mostrada.</p>
+		</details>
 
-			<li>
-				<p>Imagens dinamicas com picture e source</p>
-				<ul>
-					<li>
-						<p>use:</p><code><pre>
-&lt;picture&gt; 
-	&lt;source media="(max-width: 750px)" \
-	srcset="img/img_p.png" type="image/png"&gt
-	&lt;img src="" alt&gt;
-&lt;/picture&gt;.</pre></code>
-						<p> - usa uma tag "img" juntamente com a tag "source" para usar varias fontes de imagem
-							dependendo por exemplo, da largura maxima da janela(entre outras situações), as fontes(tags
-							"source") devem estar na ordem certa, sendo esta, de cima para baixo - menor para maoir ou
-							vice versa. a imagem fonte da tag "img" dentro de "picture" sempre deve ser a maior ou a
-							menor de todas as imagens. lembre tambem de usar "srcset" ao inves de "src" nas tags
-							"source" quando for trabalhar com imagens.</p>
-				</ul>
+		<details>
+			<summary>picture</summary>
+			<p>use - <strong>&lt;source media="(max-width: 750px)" srcset="img/img_p.png" type="image/png"></strong></p>
+		</details>
 
-			<li>Link
-				<ul>
-					<li>
-						<p>use - &lt;audio src="" controls&gt;&lt;/audio&gt; - src recebe o caminho da imagem, alt
-							recebe um texto descritivo para o caso da imagem nao ser mostrada. recomenda-se o uso
-							acompanhado da tag "source".</p>
-				</ul>
+		<details>
+			<summary>audio</summary>
+			<p>use - <strong>&lt;audio src="" controls>&lt;/audio></strong> - src recebe o caminho da imagem, alt recebe
+				um texto descritivo
+				para o caso da imagem nao ser mostrada. recomenda-se o uso acompanhado da tag "source".</p>
+		</details>
 
-			<li>video
-				<ul>
-					<li>
-						<p>use - &lt;video controls&gt;&lt;/video controls&gt; - . recomenda-se o uso acompanhado da tag
-							"source".</p>
-				</ul>
+		<details>
+			<summary>video</summary>
+			<p>use - <strong>&lt;video controls></video controls></strong> - . recomenda-se o uso acompanhado da tag
+				"source".</p>
+		</details>
 
-
-		</ul>
 		<!-- conteiners -->
 		<h2>Tags conteiners</h2>
 		<p>Atente-se: todas a tags conteiners <em>precisam</em> ser fechadas.</p>
 
-		<ul>
-			<li>header
-				<ul>
-					<li>
-						<p>Usado apra fazer cabeçalhos.</p>
-				</ul>
+		<details>
+			<summary>header</summary>
+			<p>Usado apra fazer cabeçalhos.</p>
+		</details>
 
-			<li>nav
-				<ul>
-					<li>
-						<p>Feito para criar barras de navegação.</p>
-				</ul>
+		<details>
+			<summary>nav</summary>
+			<p>Feito para criar barras de navegação.</p>
+		</details>
 
-			<li>main
-				<ul>
-					<li>
-						<p>Leva todo o conteudo principal do site. Rescomenda-se o uso header > main > footer.</p>
-						</p>
-						</p>
-				</ul>
+		<details>
+			<summary>main</summary>
+			<p>Leva todo o conteudo principal do site. Rescomenda-se o uso header > main > footer.</p>
+		</details>
 
-			<li>section
-				<ul>
-					<li>
-						<p>Usado para separar seções no site.</p>
-				</ul>
+		<details>
+			<summary>section</summary>
+			<p>Usado para separar seções no site.</p>
+		</details>
 
-			<li>article
-				<ul>
-					<li>
-						<p>Cria artigos.</p>
-				</ul>
+		<details>
+			<summary>article</summary>
+			<p>Artigos.</p>
+		</details>
 
-			<li>aside
-				<ul>
-					<li>
-						<p>#.</p>
-				</ul>
+		<details>
+			<summary>aside</summary>
+			<p>##</p>
+		</details>
 
-			<li>footer
-				<ul>
-					<li>
-						<p>Usado para criar o rodapé do site.</p>
-				</ul>
+		<details>
+			<summary>footer</summary>
+			<p>Usado para criar o rodapé do site.</p>
+		</details>
 
-			<li>div
-				<ul>
-					<li>
-						<p>Tag conteiner genérica do tipo box-level.</p>
-				</ul>
+		<details>
+			<summary>div</summary>
+			<p>Tag conteiner genérica do tipo box-level.</p>
+		</details>
 
-			<li>span
-				<ul>
-					<li>
-						<p>Tag agrupadora genérica do tipo inline-level.</p>
-				</ul>
-		</ul>
+		<details>
+			<summary>span</summary>
+			<p>Tag agrupadora genérica do tipo inline-level.</p>
+		</details>
 
 		<p><br>mais Tags serão adicionadas em breve</p>
 	</main>
+
 	<footer>
-		<p>Feito por: JoSanInk</p>
+		<p>Criado por <a href="pages/pag000.html">JoSanInk</a></p>
 	</footer>
-
-
 </body>
 
 </html>

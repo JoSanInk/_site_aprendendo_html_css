@@ -74,6 +74,23 @@ main aside p {
 
 }
 
+main details {
+	margin: 20px 10px;
+	background-color: var(--col_contrast2);
+	padding: 10px;
+	border-radius: 5px;
+	color: #FF0050;
+}
+
+main details p {
+	text-indent: 20px;
+	color: black;
+}
+
+main summary {
+	color: var(--col_contrast1);
+}
+
 ul {
 	list-style-position: inside;
 }
